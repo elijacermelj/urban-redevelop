@@ -29,7 +29,7 @@ export function ComparisonPanel({ locations, onClose }: ComparisonPanelProps) {
   return (
     <>
       <div
-        className="fixed inset-0 z-40 bg-background/70 backdrop-blur-sm animate-in fade-in"
+        className="fixed inset-0 z-40 bg-background/70 backdrop-blur-[1px] animate-in fade-in"
         onClick={onClose}
       />
       <div className="fixed inset-0 z-50 grid place-items-center p-6 pointer-events-none">
@@ -45,7 +45,7 @@ export function ComparisonPanel({ locations, onClose }: ComparisonPanelProps) {
             </div>
             <button
               onClick={onClose}
-              className="grid size-8 place-items-center rounded-md border border-border bg-surface text-muted-foreground transition-colors hover:text-foreground"
+              className="grid size-8 cursor-pointer place-items-center rounded-md border border-border bg-surface text-muted-foreground transition-colors hover:text-foreground"
             >
               <X className="size-4" />
             </button>

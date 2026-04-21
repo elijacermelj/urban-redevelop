@@ -178,5 +178,6 @@ export function MapView({ locations, selectedId, comparedIds, onSelect, layers }
     if (loc) mapRef.current.setView([loc.lat, loc.lng], 15, { animate: true });
   }, [selectedId, locations]);
 
-  return <div ref={containerRef} className="absolute inset-0" />;
+  // Keep the map in a low stacking context so app overlays (drawers/modals) always render above Leaflet panes.
+  return <div ref={containerRef} className="absolute inset-0 z-0" />;
 }

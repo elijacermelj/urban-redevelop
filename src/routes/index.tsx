@@ -57,7 +57,7 @@ function Landing() {
           <div className="mt-10 flex flex-wrap items-center gap-3">
             <Link
               to="/app"
-              className="group inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-primary to-primary-glow px-6 py-3 font-semibold text-background shadow-[var(--shadow-glow)] transition-all hover:brightness-110"
+              className="group inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 font-semibold text-background shadow-[var(--shadow-glow)] transition-all hover:brightness-110"
             >
               Odpri demo
               <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" />
@@ -164,7 +164,7 @@ function Landing() {
           </div>
           <Link
             to="/app"
-            className="inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-primary to-primary-glow px-6 py-3 font-semibold text-background shadow-[var(--shadow-glow)] transition-all hover:brightness-110"
+            className="inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 font-semibold text-background shadow-[var(--shadow-glow)] transition-all hover:brightness-110"
           >
             Zaženi aplikacijo <ArrowRight className="size-4" />
           </Link>

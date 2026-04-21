@@ -54,7 +54,7 @@ export function SidebarFilters({
                   key={p.id}
                   onClick={() => onChange({ ...filters, program: p.id })}
                   className={cn(
-                    "group flex flex-col items-start gap-1.5 rounded-lg border p-3 text-left transition-all",
+                    "group flex cursor-pointer flex-col items-start gap-1.5 rounded-lg border p-3 text-left transition-all",
                     active
                       ? "border-primary/60 bg-primary/10 shadow-[var(--shadow-glow)]"
                       : "border-border bg-surface-elevated hover:border-border/80 hover:bg-surface-elevated/80"
@@ -81,7 +81,7 @@ export function SidebarFilters({
           <select
             value={filters.district}
             onChange={(e) => onChange({ ...filters, district: e.target.value })}
-            className="w-full rounded-md border border-border bg-surface-elevated px-3 py-2 text-sm font-medium outline-none transition-colors focus:border-primary"
+            className="w-full cursor-pointer rounded-md border border-border bg-surface-elevated px-3 py-2 text-sm font-medium outline-none transition-colors focus:border-primary"
           >
             {DISTRICTS.map((d) => (
               <option key={d} value={d}>
@@ -184,7 +184,7 @@ function Toggle({
     <button
       onClick={() => onChange(!checked)}
       className={cn(
-        "flex w-full items-center justify-between rounded-md border border-border bg-surface-elevated px-3 py-2 text-left text-xs font-medium transition-colors hover:border-border/80",
+        "flex w-full cursor-pointer items-center justify-between rounded-md border border-border bg-surface-elevated px-3 py-2 text-left text-xs font-medium transition-colors hover:border-border/80",
         checked ? "text-foreground" : "text-muted-foreground"
       )}
     >

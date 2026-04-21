@@ -24,7 +24,7 @@ export function LocationDetailDrawer({ location, onClose }: DetailDrawerProps) {
   return (
     <>
       <div
-        className="fixed inset-0 z-40 bg-background/60 backdrop-blur-sm animate-in fade-in"
+        className="fixed inset-0 z-40 bg-background/45 backdrop-blur-[1px] animate-in fade-in"
         onClick={onClose}
       />
       <aside className="fixed right-0 top-0 z-50 h-full w-full max-w-[480px] overflow-y-auto border-l border-border bg-surface shadow-[var(--shadow-elevated)] animate-in slide-in-from-right">
@@ -39,7 +39,7 @@ export function LocationDetailDrawer({ location, onClose }: DetailDrawerProps) {
           </div>
           <button
             onClick={onClose}
-            className="grid size-8 place-items-center rounded-md border border-border bg-surface-elevated text-muted-foreground transition-colors hover:text-foreground"
+            className="grid size-8 cursor-pointer place-items-center rounded-md border border-border bg-surface-elevated text-muted-foreground transition-colors hover:text-foreground"
           >
             <X className="size-4" />
           </button>
