@@ -128,14 +128,16 @@ function AppPage() {
             </div>
           </div>
         </main>
-        <TopLocationsList
-          locations={locations}
-          selectedId={selectedId}
-          comparedIds={comparedIds}
-          onSelect={setSelectedId}
-          onToggleCompare={toggleCompare}
-          onOpenCompare={() => setCompareOpen(true)}
-        />
+        {!selectedLocation && (
+          <TopLocationsList
+            locations={locations}
+            selectedId={selectedId}
+            comparedIds={comparedIds}
+            onSelect={setSelectedId}
+            onToggleCompare={toggleCompare}
+            onOpenCompare={() => setCompareOpen(true)}
+          />
+        )}
       </div>
 
       <LocationDetailDrawer
