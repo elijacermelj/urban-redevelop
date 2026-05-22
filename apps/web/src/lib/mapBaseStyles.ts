@@ -18,7 +18,7 @@ type MapBaseStyleConfig = {
 export const MAP_BASE_STYLES: Record<MapBaseStyleId, MapBaseStyleConfig> = {
   carto_light: {
     label: "Svetla",
-    previewSrc: "/map-style-previews/svetla-carto.png",
+    previewSrc: `${import.meta.env.BASE_URL}map-style-previews/svetla-carto.png`,
     tileUrl: "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
     attribution:
       '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
@@ -27,7 +27,7 @@ export const MAP_BASE_STYLES: Record<MapBaseStyleId, MapBaseStyleConfig> = {
   },
   carto_voyager: {
     label: "Voyager",
-    previewSrc: "/map-style-previews/voyager-carto.png",
+    previewSrc: `${import.meta.env.BASE_URL}map-style-previews/voyager-carto.png`,
     tileUrl: "https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png",
     attribution:
       '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
@@ -36,7 +36,7 @@ export const MAP_BASE_STYLES: Record<MapBaseStyleId, MapBaseStyleConfig> = {
   },
   carto_dark: {
     label: "Temna",
-    previewSrc: "/map-style-previews/temna-carto.png",
+    previewSrc: `${import.meta.env.BASE_URL}map-style-previews/temna-carto.png`,
     tileUrl: "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
     attribution:
       '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
@@ -45,7 +45,7 @@ export const MAP_BASE_STYLES: Record<MapBaseStyleId, MapBaseStyleConfig> = {
   },
   osm_standard: {
     label: "OSM standard",
-    previewSrc: "/map-style-previews/osm-standard.png",
+    previewSrc: `${import.meta.env.BASE_URL}map-style-previews/osm-standard.png`,
     tileUrl: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
     attribution:
       '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
@@ -53,7 +53,7 @@ export const MAP_BASE_STYLES: Record<MapBaseStyleId, MapBaseStyleConfig> = {
   },
   opentopo: {
     label: "Topo",
-    previewSrc: "/map-style-previews/topo-opentopo.png",
+    previewSrc: `${import.meta.env.BASE_URL}map-style-previews/topo-opentopo.png`,
     tileUrl: "https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png",
     attribution:
       'Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, <a href="https://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)',
@@ -62,7 +62,7 @@ export const MAP_BASE_STYLES: Record<MapBaseStyleId, MapBaseStyleConfig> = {
   },
   esri_satellite: {
     label: "Satelitska",
-    previewSrc: "/map-style-previews/satelitska-esri.png",
+    previewSrc: `${import.meta.env.BASE_URL}map-style-previews/satelitska-esri.png`,
     tileUrl: "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
     attribution:
       "Tiles &copy; Esri &mdash; Source: Esri, Maxar, Earthstar Geographics, and the GIS User Community",

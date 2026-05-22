@@ -262,7 +262,7 @@ function Landing() {
             <div className="pointer-events-none absolute inset-0 -z-10 rounded-3xl bg-primary/12 blur-3xl" />
             <div className="overflow-hidden rounded-[18px] border border-border/70 bg-surface-elevated/75 p-4 shadow-[var(--shadow-panel)] sm:p-6 lg:p-8">
               <img
-                src="/reusefirst-macbook-mock.png"
+                src={`${import.meta.env.BASE_URL}reusefirst-macbook-mock.png`}
                 alt="ReuseFirst aplikacija prikazana na prenosniku"
                 className="mx-auto w-full max-w-4xl object-contain drop-shadow-[0_20px_40px_oklch(0.2_0.04_160_/_0.28)] lg:w-[120%] lg:max-w-none lg:-mb-[5%] lg:translate-x-3"
                 loading="lazy"

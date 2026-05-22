@@ -14,7 +14,7 @@ export function SiteHeader({ minimal = false }: { minimal?: boolean }) {
     <header className="sticky top-0 z-40 flex h-14 min-w-0 items-center justify-between gap-3 border-b border-border bg-surface/80 px-3 backdrop-blur-md sm:px-5">
       <Link to="/" className="group flex min-w-0 items-center gap-2.5">
         <img
-          src="/reusefirst-logo.svg"
+          src={`${import.meta.env.BASE_URL}reusefirst-logo.svg`}
           alt=""
           className="h-11 w-auto shrink-0 drop-shadow-[0_3px_10px_rgba(6,84,74,0.25)] sm:h-12"
         />

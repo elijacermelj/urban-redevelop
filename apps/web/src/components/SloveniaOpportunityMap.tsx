@@ -185,7 +185,7 @@ export function SloveniaOpportunityMap() {
         <div className="relative mx-auto mt-2 max-w-5xl overflow-visible px-2 py-6 sm:px-8 sm:py-8">
           <div className="relative mx-auto aspect-[1000/660] w-full max-w-4xl">
             <img
-              src="/slovenia-border-outline-pale.svg"
+              src={`${import.meta.env.BASE_URL}slovenia-border-outline-pale.svg`}
               alt="Obris Slovenije z označenimi mesti"
               className="absolute inset-0 h-full w-full object-contain"
             />
