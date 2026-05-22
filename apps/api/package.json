@@ -1,0 +1,12 @@
+{
+  "name": "@urban/api",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "build": "echo 'No API build step configured yet'",
+    "lint": "echo 'No API lint step configured yet'"
+  }
+}

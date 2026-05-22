@@ -1,0 +1,17 @@
+{
+  "name": "urban-redevelop",
+  "private": true,
+  "workspaces": ["apps/*", "packages/*"],
+  "scripts": {
+    "dev": "npm run dev --workspace @urban/web",
+    "dev:web": "npm run dev --workspace @urban/web",
+    "dev:api": "npm run dev --workspace @urban/api",
+    "build": "npm run build --workspace @urban/web",
+    "build:web": "npm run build --workspace @urban/web",
+    "build:api": "npm run build --workspace @urban/api",
+    "preview": "npm run preview --workspace @urban/web",
+    "lint": "npm run lint --workspace @urban/web",
+    "format": "npm run format --workspace @urban/web",
+    "check:shared": "npm run check --workspace @urban/shared"
+  }
+}
