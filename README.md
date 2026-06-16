@@ -50,3 +50,8 @@ apps/
 
 packages/
   shared/   Shared TypeScript types and contracts
+
+```
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
